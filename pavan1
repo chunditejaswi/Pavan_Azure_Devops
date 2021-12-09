@@ -5,3 +5,12 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/chunditejaswi/Pavan_Azure_Devops.git
 git push -u origin main
+name: string  # build numbering format
+resources:
+  pipelines: [ pipelineResource ]
+  containers: [ containerResource ]
+  repositories: [ repositoryResource ]
+variables: # several syntaxes, see specific section
+trigger: trigger
+pr: pr
+stages: [ stage | templateReference ]
